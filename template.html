@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generated Nate Pann</title>   
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+
+  <body class="rest">
+    <div id="wrap" class="wrap">
+      <div class="view-wrap talk">
+
+        <!-- 판&톡톡 컨텐츠//-->
+        <div class="pann-title">
+          <!-- view-tit --> 
+          <h3 class="view-tit" style="background:url('/img/v2/ic_talkchoicex2.png') no-repeat; background-size:70px 105px;">{title}</h3>
+          <div class="rankview"><a href="#">+실시간 랭킹 더보기</a></div>
+
+          <div class="writer">
+            <div class="sub">
+              <span class="nick">구ㅜ</span>
+              <span class="bar">|</span><span id="date" class="num">20{date}</span>
+            </div>
+            <div class="sub">
+              조회&nbsp;<span id="views" class="num">{views}</span>&nbsp;<span class="bar">|</span>추천&nbsp;<span id="recs" class="num">{upvotes}</span>
+            </div>
+            <div class="con_info">    
+              <ul>
+                <li><a href="#">댓글 <span id="replies" class="count">{replies}</span></a></li>
+                <li><a href="#">댓글쓰기</a></li>
+                <li class="open_toggle">
+                  <a href="#"><span class="a11y">기능 더보기</span></a>
+                  <div class="dropdown" id="toggle01" style="display:none;">
+                    <ul>
+                      <li><a href="#" class="btn-font enlarge">크게보기</a></li>
+                      <li><a href="#" class="layer_opener">공유하기</a></li>
+                      <li><a href="#">신고하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- //판&톡톡 컨텐츠 -->
+        <div class="content" id="pann-content">
+          {body}
+        </div>
+
+        <div class="updown">
+          <div class="btnbox up"><button type="button" title="추천"><span>추천</span></button><span id="R_cnt" class="count">{upvotes}</span></div>
+          <div class="btnbox down"><button type="button" title="반대"><span>반대</span></button><span id="O_cnt" class="count">{downvotes}</span></div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
